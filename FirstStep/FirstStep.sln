@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWPF", "FirstWPF\FirstW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegtangleWPF", "RegtangleWPF\RegtangleWPF.csproj", "{9EF1A068-820A-4909-877D-1FDBB2BC63FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EightBall", "EightBall\EightBall.csproj", "{1C0D318D-00C1-4A38-8A31-091191C8FCDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EF1A068-820A-4909-877D-1FDBB2BC63FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF1A068-820A-4909-877D-1FDBB2BC63FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF1A068-820A-4909-877D-1FDBB2BC63FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0D318D-00C1-4A38-8A31-091191C8FCDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0D318D-00C1-4A38-8A31-091191C8FCDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0D318D-00C1-4A38-8A31-091191C8FCDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0D318D-00C1-4A38-8A31-091191C8FCDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
