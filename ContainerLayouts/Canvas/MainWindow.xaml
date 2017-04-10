@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Canvas >
-        <TextBlock Canvas.Left="20" Canvas.Top="40" Background="Firebrick" Height="200" Width="300"></TextBlock>
+        <TextBlock Canvas.Left="20" Canvas.Top="40" Background="Firebrick" Height="200" Width="300" Canvas.ZIndex="1"></TextBlock>
         <TextBlock Canvas.Right="10" Canvas.Bottom="20" Background="Gray" Height="200" Width="300"></TextBlock>
     </Canvas>
 </Window>
