@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        <Rectangle Fill="#FF5EFF13"  Height="100" Margin="208,22,209,0" Stroke="#FFF51515" VerticalAlignment="Top" RenderTransformOrigin="0.502,-0.427"/>
-        <Rectangle Fill="#FFFF1E13" HorizontalAlignment="Left" Height="100" Margin="208,80,0,0" Stroke="#FFF51515" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.518,-1.14"/>
+        <Rectangle Fill="#FF5EFF13"  Height="100" Margin="208,22,209,0" Stroke="#FFF51515" VerticalAlignment="Top" RenderTransformOrigin="0.502,-0.427" MouseEnter="Rectangle_MouseEnter" MouseLeave="Rectangle_MouseLeave"/>
+        <Rectangle Fill="#FFFF1E13" HorizontalAlignment="Left" Height="100" Margin="208,80,0,0" Stroke="#FFF51515" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.518,-1.14" MouseEnter="Rectangle_MouseEnter" MouseLeave="Rectangle_MouseLeave"/>
 
     </StackPanel>
 </Window>

@@ -24,5 +24,15 @@ namespace RegtangleWPF
         {
             InitializeComponent();
         }
+
+        private void Rectangle_MouseEnter(object sender, MouseEventArgs e)
+        {
+            (sender as Rectangle).Fill = Brushes.Yellow;
+        }
+
+        private void Rectangle_MouseLeave(object sender, MouseEventArgs e)
+        {
+            (sender as Rectangle).Fill = Brushes.Wheat;
+        }
     }
 }
