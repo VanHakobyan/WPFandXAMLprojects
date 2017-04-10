@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grid", "Grid\Grid.csproj", "{7D38EF5E-7125-4A16-BC4D-78346282AB2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanel", "StackPanel\StackPanel.csproj", "{AE9F0383-67E5-4FD7-B06F-2AA657DB5BC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7D38EF5E-7125-4A16-BC4D-78346282AB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D38EF5E-7125-4A16-BC4D-78346282AB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D38EF5E-7125-4A16-BC4D-78346282AB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9F0383-67E5-4FD7-B06F-2AA657DB5BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9F0383-67E5-4FD7-B06F-2AA657DB5BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9F0383-67E5-4FD7-B06F-2AA657DB5BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9F0383-67E5-4FD7-B06F-2AA657DB5BC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
