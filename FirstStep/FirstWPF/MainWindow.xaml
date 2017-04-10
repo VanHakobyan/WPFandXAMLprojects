@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="First WPF" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="button" Content="Info" Margin="216,205,216,87" RenderTransformOrigin="-0.156,1.205" Click="button_Click"/>
+        <TextBox x:Name="textBox" Height="23" Margin="185,137,185,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" Margin="185,68,185,0" TextWrapping="Wrap" Text="Input arguments" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Cursor="Wait" AutomationProperties.IsOffscreenBehavior="FromClip" TextAlignment="Center" Foreground="#FF641D76"/>
+
     </Grid>
 </Window>

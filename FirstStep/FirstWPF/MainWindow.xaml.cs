@@ -24,5 +24,17 @@ namespace FirstWPF
         {
             InitializeComponent();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBox.Text == string.Empty)
+            {
+                MessageBox.Show("Not Input argument");
+            }
+            else
+            {
+                MessageBox.Show("Hi " + textBox.Text);
+            }
+        }
     }
 }
