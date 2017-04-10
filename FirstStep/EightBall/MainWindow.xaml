@@ -5,8 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EightBall"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Գուշակ մանուշակ " Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition  Width="200"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="100*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1" Color="Green"></GradientStop>
+                    <GradientStop Offset="0.881" Color="#FFFF6800"></GradientStop>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox 
+            x:Name="Questions" 
+            HorizontalAlignment="Stretch" 
+            Height="80" 
+            Margin="24,10,-180,0" 
+            TextWrapping="Wrap"
+            FontFamily="Verdana"
+            Text="Գրեք ձեր հարցը և մենք սիրով կպատասխանենք"
+            VerticalAlignment="Stretch" 
+            Width="458" 
+            Grid.Row="0"
+            Grid.ColumnSpan="2"/>
+        <Button
+            x:Name="button"
+            Content="Ask the questions"
+            HorizontalAlignment="Left"
+            Margin="26,10,0,0"
+            Grid.Row="1"
+            Padding="5"
+            VerticalAlignment="Top"
+            IsDefault="True"
+            Click="answer_Click"
+            Width="108" 
+            Grid.ColumnSpan="2" 
+            Height="28"/>
+        <TextBox
+            x:Name="textAnsver" 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch" 
+            Grid.ColumnSpan="2" 
+            Margin="26,28,-180,57" 
+            Grid.Row="2"
+            TextWrapping="Wrap" 
+            Text="Պատասխանն է ..." 
+            IsReadOnly="True"
+            FontFamily="Verdana"
+           Foreground="Purple"
+            Height="96"
+            Width="456"/>
     </Grid>
 </Window>

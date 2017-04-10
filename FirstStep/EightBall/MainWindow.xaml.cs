@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +24,15 @@ namespace EightBall
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void answer_Click(object sender, RoutedEventArgs e)
+        {
+            this.Cursor = Cursors.Wait;
+            Thread.Sleep(500);
+           textAnsver.Text = AnswerGenerator.GetRandomAnswer();
+            this.Cursor = null;
+
         }
     }
 }
