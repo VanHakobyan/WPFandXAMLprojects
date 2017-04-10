@@ -1,0 +1,13 @@
+﻿<Window x:Class="Canvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Canvas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas >
+        <TextBlock Canvas.Left="20" Canvas.Top="40" Background="Firebrick" Height="200" Width="300"></TextBlock>
+        <TextBlock Canvas.Right="10" Canvas.Bottom="20" Background="Gray" Height="200" Width="300"></TextBlock>
+    </Canvas>
+</Window>
