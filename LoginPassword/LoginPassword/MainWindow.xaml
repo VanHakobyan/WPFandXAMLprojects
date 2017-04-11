@@ -21,5 +21,6 @@
         <CheckBox x:Name="Stay" Content="Stay" HorizontalAlignment="Center" Margin="10" FontFamily="Ravie" Checked="Stay_Checked" Foreground="#FF00B4FF"/>
         <Button x:Name="button" Width="100" Content="Sign In" Background="Gold" FontFamily="Forte" Click="button_Click" Margin="5" FontSize="14" Foreground="#FF113DDD"/>
 
+
     </StackPanel>
 </Window>
