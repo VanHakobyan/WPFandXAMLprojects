@@ -5,19 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginPassword"
         mc:Ignorable="d"
+        MinWidth="400"
+        MinHeight="300"
         Title="LoginPassword" Height="368.022" Width="588.55" >
-    <Window.Background>
-        <ImageBrush ImageSource="https://camo.githubusercontent.com/d38019cea8f714cea246ffdbb37a61a848f53ab3/687474703a2f2f7777772e64616564746563682e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30312f437574655969656c6452657475726e2e6a706720" Stretch="UniformToFill"/>
-    </Window.Background>
-    
-    <StackPanel>
-        <Label x:Name="label" Content="Login" HorizontalAlignment="Center" FontFamily="Ravie" FontSize="14"/>
-        <TextBox Width="100" Name="Login" Height="20"  Background="Azure" Margin="2" RenderTransformOrigin="0.538,-0.447" />
-        <Label x:Name="label1" Content="Password" FontFamily="Ravie" TextOptions.TextFormattingMode="Ideal" HorizontalAlignment="Center"/>
-        <PasswordBox x:Name="Password" Width="100" Height="20" Background="Aquamarine" Margin="0 10 0 10" />
-        <CheckBox x:Name="Stay" Content="Stay" HorizontalAlignment="Center" Margin="10" FontFamily="Ravie" Checked="Stay_Checked"/>
 
-        <Button x:Name="button" Content="Sign In" Background="Gold" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="SketchFlow Print" FontSize="16" Click="button_Click"/>
+    <Window.Background>
+        <ImageBrush x:Name="img" ImageSource="C:\Users\Van\Pictures\desktop\ss.JFIF" Stretch="UniformToFill"/>
+    </Window.Background>
+
+    <StackPanel>
+        <Label x:Name="label" Content="Login" HorizontalAlignment="Center" FontFamily="Ravie" FontSize="14" Foreground="#FF0DCDF7"/>
+        <TextBox Width="100" Name="Login" Height="20"  Background="#FFADF65E" Margin="2" RenderTransformOrigin="0.538,-0.447" />
+        <Label x:Name="label1" Content="Password" FontFamily="Ravie" TextOptions.TextFormattingMode="Ideal" HorizontalAlignment="Center"/>
+        <PasswordBox x:Name="Password" Width="100" Height="20" Background="#FF00EEFF" Margin="0 10 0 10" />
+        <CheckBox x:Name="Stay" Content="Stay" HorizontalAlignment="Center" Margin="10" FontFamily="Ravie" Checked="Stay_Checked" Foreground="#FF00B4FF"/>
+        <Button x:Name="button" Width="100" Content="Sign In" Background="Gold" FontFamily="Forte" Click="button_Click" Margin="5" FontSize="14" Foreground="#FF113DDD"/>
 
     </StackPanel>
 </Window>
