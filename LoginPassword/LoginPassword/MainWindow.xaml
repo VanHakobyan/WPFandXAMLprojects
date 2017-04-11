@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginPassword"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="368.022" Width="588.55" >
+    <StackPanel>
+        <Label x:Name="label" Content="Login" HorizontalAlignment="Center" FontFamily="Ravie" FontSize="14"/>
+        <TextBox Width="100" Name="Login" Height="20"  Background="Azure" Margin="2" RenderTransformOrigin="0.538,-0.447" />
+        <Label x:Name="label1" Content="Password" FontFamily="Ravie" TextOptions.TextFormattingMode="Ideal" HorizontalAlignment="Center"/>
+        <PasswordBox x:Name="Password" Width="100" Height="20" Background="Aquamarine" Margin="0 10 0 10" />
+
+        <Button x:Name="button" Content="Sign In" Background="Gold" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="SketchFlow Print" FontSize="16" Click="button_Click"/>
+
+    </StackPanel>
 </Window>
