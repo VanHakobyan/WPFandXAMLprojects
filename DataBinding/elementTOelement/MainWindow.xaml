@@ -6,7 +6,24 @@
         xmlns:local="clr-namespace:elementTOelement"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
+    <StackPanel Margin="5">
+        <Slider Name="slider"
+                Margin="5"
+                Minimum="1"
+                Maximum="50"
+                Value="10"
+                TickFrequency="1"
+                IsSnapToTickEnabled="True"
+                TickPlacement="TopLeft"/>
+        <TextBox Name="tb"
+                 Margin="10"
+                 FontSize="{Binding ElementName=slider, Path=Value, Mode=TwoWay}"
+                 Text="la hndy"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Margin="5" Padding="10" Click="Button_Click">Small</Button>
+            <Button Margin="5" Padding="10" Click="Button_Click_1">Medium</Button>
+            <Button Margin="5" Padding="10" Click="Button_Click_2">Large</Button>
+        </StackPanel>
         
     </StackPanel>
 </Window>
