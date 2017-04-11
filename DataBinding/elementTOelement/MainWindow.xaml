@@ -15,15 +15,32 @@
                 TickFrequency="1"
                 IsSnapToTickEnabled="True"
                 TickPlacement="TopLeft"/>
+        
+        
         <TextBox Name="tb"
                  Margin="10"
-                 FontSize="{Binding ElementName=slider, Path=Value, Mode=TwoWay}"
+                 FontSize="{Binding ElementName=slider,
+            Path=Value,
+            Mode=TwoWay}"
                  Text="Examle"/>
+        
+        
+        
         <StackPanel Orientation="Horizontal">
             <Button Margin="5" Padding="10" Click="Button_Click">Small</Button>
             <Button Margin="5" Padding="10" Click="Button_Click_1">Medium</Button>
             <Button Margin="5" Padding="10" Click="Button_Click_2">Large</Button>
         </StackPanel>
         
+        
+        <StackPanel Orientation="Horizontal">
+            <TextBlock VerticalAlignment="Center" xml:space="preserve">Size</TextBlock>
+            <TextBox 
+                FontSize="{Binding ElementName=tb,
+                Path=FontSize,
+                UpdateSourceTrigger=PropertyChanged,
+                Mode=TwoWay}"
+                     Width="100"></TextBox>
+        </StackPanel>
     </StackPanel>
 </Window>
