@@ -35,7 +35,23 @@ namespace LoginPassword
             }
             else
             {
-                MessageBox.Show($"Hello {Login.Text} i miss you bebe !!!");
+                if (Stay.IsChecked == true)
+                {
+                    MessageBox.Show($"Hello {Login.Text} i miss you bebe !!! \n your login and password have been saved!!! "  );
+                }
+                else
+                {
+                    MessageBox.Show($"Hello {Login.Text} i miss you bebe !!!");
+                }
+               
+            }
+        }
+
+        private void Stay_Checked(object sender, RoutedEventArgs e)
+        {
+            if (Stay.IsChecked == false)
+            {
+                MessageBox.Show("Do you want to keep your password?");
             }
         }
     }

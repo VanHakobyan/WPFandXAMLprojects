@@ -11,6 +11,7 @@
         <TextBox Width="100" Name="Login" Height="20"  Background="Azure" Margin="2" RenderTransformOrigin="0.538,-0.447" />
         <Label x:Name="label1" Content="Password" FontFamily="Ravie" TextOptions.TextFormattingMode="Ideal" HorizontalAlignment="Center"/>
         <PasswordBox x:Name="Password" Width="100" Height="20" Background="Aquamarine" Margin="0 10 0 10" />
+        <CheckBox x:Name="Stay" Content="Stay" HorizontalAlignment="Center" Margin="10" FontFamily="Ravie" Checked="Stay_Checked"/>
 
         <Button x:Name="button" Content="Sign In" Background="Gold" HorizontalAlignment="Center" FontWeight="Bold" FontFamily="SketchFlow Print" FontSize="16" Click="button_Click"/>
 
