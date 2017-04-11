@@ -27,17 +27,17 @@ namespace elementTOelement
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            tb.FontSize = 10;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            tb.FontSize = this.FontSize+10;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            tb.FontSize = 40;
         }
     }
 }
