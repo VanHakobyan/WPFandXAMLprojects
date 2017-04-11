@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoginPassword"
         mc:Ignorable="d"
-        Title="MainWindow" Height="368.022" Width="588.55" >
+        Title="LoginPassword" Height="368.022" Width="588.55" >
     <Window.Background>
         <ImageBrush ImageSource="https://camo.githubusercontent.com/d38019cea8f714cea246ffdbb37a61a848f53ab3/687474703a2f2f7777772e64616564746563682e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30312f437574655969656c6452657475726e2e6a706720" Stretch="UniformToFill"/>
     </Window.Background>

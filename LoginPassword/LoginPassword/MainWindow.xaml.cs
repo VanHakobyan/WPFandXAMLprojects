@@ -29,6 +29,7 @@ namespace LoginPassword
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+
             if ((Login.Text == string.Empty && Password.Password == string.Empty) ||( Password.Password.Length <= 6 && Password.Password.Length >= 15))
             {
                 MessageBox.Show("Please correctly enter the Login");
@@ -37,9 +38,9 @@ namespace LoginPassword
             {
                 if (Stay.IsChecked == true)
                 {
-                    MessageBox.Show($"Hello {Login.Text} i miss you bebe !!! \n your login and password have been saved!!! "  );
+                    MessageBox.Show($"Hello {Login.Text} i miss you bebe !!!\nYour login and password have been saved!!! "  );
                 }
-                else
+                else 
                 {
                     MessageBox.Show($"Hello {Login.Text} i miss you bebe !!!");
                 }
