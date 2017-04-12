@@ -20,7 +20,7 @@
             <Button x:Name="ShowInNumber" Content="Show In Number" Width="105" Margin="19,0,20,287"/>
             <Button x:Name="UpdateDescription" Content="Update Description" Width="125" Margin="0,0,20,287"/>
             <Button x:Name="ShowTeam" Content="ShowTeam" Width="75" Margin="0,0,20,287"/>
-            <Button x:Name="Autor" Content="Autor" Width="36" Margin="0,0,5,287"/>
+            <Button x:Name="Autor" Content="Autor" Width="36" Margin="0,0,5,287" Click="Autor_Click"/>
 
         </StackPanel>
         <Label x:Name="Name" Content="Name" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Background="#FFFB2222" Foreground="#FF3A12EE" FontWeight="Bold" Width="61" Grid.Row="2"/>

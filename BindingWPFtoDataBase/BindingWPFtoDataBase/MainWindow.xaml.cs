@@ -24,5 +24,10 @@ namespace BindingWPFtoDataBase
         {
             InitializeComponent();
         }
+
+        private void Autor_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
