@@ -34,7 +34,7 @@
         
         
         <StackPanel Orientation="Horizontal">
-            <TextBlock VerticalAlignment="Center" xml:space="preserve">Size</TextBlock>
+            <TextBlock VerticalAlignment="Center" Foreground="Blue" xml:space="preserve">Size</TextBlock>
             <TextBox 
                 Text="{Binding ElementName=tb,
                 Path=FontSize,
