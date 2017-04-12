@@ -1,3 +1,3 @@
 <p align="center">
-<img src="https://www.dropbox.com/pri/get/Login.gif?_subject_uid=244560287&raw=1&size=1024x768&size_mode=3&w=AAA7LgEotGsMOSITyEwd1CMz-2jwVuG144f6L7RnmZAkKg">
+<img src="https://dl.dropboxusercontent.com/content_link/23dO9RgDCECSMdZKHboZErZGa0dFcb7hmd1iZX6nc3w9nm8LniZ0VY5SMVyVPvdg/file">
 </p>
