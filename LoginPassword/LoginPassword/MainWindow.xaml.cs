@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -58,7 +59,14 @@ namespace LoginPassword
 
         private void Show_Click(object sender, RoutedEventArgs e)
         {
+            //Autors.Visibility = Visibility.Hidden;
+            //Thread.Sleep(500);
             Autors.Visibility = Visibility.Visible;
+        }
+
+        private void Show_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+           Autors.Visibility = Visibility.Collapsed;
         }
     }
 }
