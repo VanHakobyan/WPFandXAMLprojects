@@ -36,7 +36,7 @@
         <StackPanel Orientation="Horizontal">
             <TextBlock VerticalAlignment="Center" xml:space="preserve">Size</TextBlock>
             <TextBox 
-                FontSize="{Binding ElementName=tb,
+                Text="{Binding ElementName=tb,
                 Path=FontSize,
                 UpdateSourceTrigger=PropertyChanged,
                 Mode=TwoWay}"
