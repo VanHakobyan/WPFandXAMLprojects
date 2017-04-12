@@ -19,7 +19,7 @@ Today XAML is used to create user interfaces in WPF, Silverlight, declare workfl
 All classes in WPF have parameterless constructors and make excessive usage of properties. That is done to make it perfectly fit for XML languages like XAML.
 <br><br>
 
-:three:<h4>Projects</h4>
+<h4>:three:Projects</h4>
 <hr>
 <ul>
 <li> <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/LoginPassword">:key:Registration Forms:key:</a>
