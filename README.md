@@ -17,3 +17,9 @@ The followinig illustration gives you an overview of the main new features of WP
 XAML stands for Extensible Application Markup Language. Its a simple language based on XML to create and initialize .NET objects with hierarchical relations. Altough it was originally invented for WPF it can by used to create any kind of object trees.
 Today XAML is used to create user interfaces in WPF, Silverlight, declare workflows in WF and for electronic paper in the XPS standard.
 All classes in WPF have parameterless constructors and make excessive usage of properties. That is done to make it perfectly fit for XML languages like XAML.
+<br><br>
+
+<h4>:tree:Projects</h4>
+<hr>
+* <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/LoginPassword">:key:Registration Forms:key:</a>
+* <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/FirstStep/EightBall">:raising_hand:Գուշակ Մանուշակ:raising_hand:</a>
