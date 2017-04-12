@@ -21,6 +21,8 @@
         <CheckBox x:Name="Stay" Content="Stay" HorizontalAlignment="Center" Margin="10" FontFamily="Ravie" Checked="Stay_Checked" Foreground="#FF00B4FF"/>
         <Button x:Name="button" Width="100" Content="Sign In" Background="Gold" FontFamily="Forte" Click="button_Click" Margin="5" FontSize="14" Foreground="#FF113DDD"/>
 
+        <Button x:Name="Show" Content="Show Authors" Margin="246,0,246,5" Click="Show_Click"/>
+        <TextBox Name="Autors" Visibility="Collapsed" Margin="189,0" Height="78" SelectionChanged="Show_Click"/>
 
     </StackPanel>
 </Window>

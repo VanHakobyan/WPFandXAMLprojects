@@ -55,5 +55,10 @@ namespace LoginPassword
                 MessageBox.Show("Do you want to keep your password?");
             }
         }
+
+        private void Show_Click(object sender, RoutedEventArgs e)
+        {
+            Autors.Visibility = Visibility.Visible;
+        }
     }
 }
