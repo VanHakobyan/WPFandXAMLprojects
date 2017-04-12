@@ -1,0 +1,29 @@
+﻿<Window x:Class="BindingWPFtoDataBase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingWPFtoDataBase"
+        mc:Ignorable="d"
+        Title="ConnectDB" Height="350" Width="525">
+    <Window.Background>
+        <ImageBrush x:Name="img" ImageSource="D:\soccer.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid>
+       
+        <StackPanel Orientation="Horizontal">
+            <TextBox x:Name="Number" Width="50" Margin="10,0,20,296" Background="White"/>
+            <Button x:Name="ShowInNumber" Content="ShowInNumber" Width="103" Margin="0,0,20,296"/>
+            <Button x:Name="UpdateDescription" Content="Update Description" Width="125" Margin="0,0,20,296"/>
+            <Button x:Name="ShowTeam" Content="ShowTeam" Width="75" Margin="0,0,20,296"/>
+
+        </StackPanel>
+        <Label x:Name="Name" Content="Name" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Background="#FFFB2222" Foreground="#FF3A12EE" FontWeight="Bold" Width="61"/>
+        <Label x:Name="AboutIn" Content="About in" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top" Background="#FF2800FF" Foreground="#FFFB2222" FontFamily="Jokerman" Height="25" Width="61"/>
+        <TextBox x:Name="textBlock" TextWrapping="Wrap" Margin="98,81,29,212" Background="White"/>
+        <TextBox x:Name="textBlock1" TextWrapping="Wrap" Margin="98,141,29,26" Background="White"/>
+
+
+
+    </Grid>
+</Window>
