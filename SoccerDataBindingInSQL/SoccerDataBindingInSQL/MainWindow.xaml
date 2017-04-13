@@ -8,7 +8,7 @@
         MinHeight="350"
         MaxHeight="600"
         MinWidth="525"
-        MaxWidth="525"
+         MaxWidth="525"
        
         Title="MainWindow" Height="350" Width="525">
     <Grid Margin="5">
@@ -24,6 +24,7 @@
         <Button x:Name="ShowInNumber" Content="Show In Number" Margin="10"/>
         <Button x:Name="UpdateDescription" Content="Update Description" Margin="10"  />
         <Button x:Name="ShowTeam" Content="Show Team" Margin="10" />
+            <Button x:Name="Author" Content="Author" Margin="10" Width="56" Click="Author_Click"></Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="5">
             <Label x:Name="Name" Height="30" Width="80" Margin="10" >Name</Label>

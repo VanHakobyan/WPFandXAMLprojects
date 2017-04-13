@@ -24,5 +24,10 @@ namespace SoccerDataBindingInSQL
         {
             InitializeComponent();
         }
+
+        private void Author_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Created by VH Production LLC");
+        }
     }
 }
