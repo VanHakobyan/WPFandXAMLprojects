@@ -59,5 +59,35 @@ namespace SoccerDataBindingInSQL
                 }
             }
         }
+
+        private void ShowTeam_Click(object sender, RoutedEventArgs e)
+        {
+            if (Team.Items.Count != 0 && Team.Visibility != Visibility.Collapsed)
+            {
+                Team.Visibility = Visibility.Collapsed;
+                Team.Items.Clear();
+            }
+            else
+            {
+                Team.Visibility = Visibility.Visible;
+                SqlDataReader reader = null;
+                using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.ConnectionString))
+                {
+
+
+                    SqlCommand command = new SqlCommand("SELECT * FROM [dbo].[Table] ", connection);
+
+                    connection.Open();
+
+                    reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        Team.Items.Add(reader[1]);
+                    }
+                    reader.Close();
+                }
+            }
+        }
     }
 }
