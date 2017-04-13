@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:BindingWPFtoDataBase"
         mc:Ignorable="d"
         Title="ConnectDB" Height="350" Width="525">
-    <Window.Background>
-        <ImageBrush x:Name="img" ImageSource="D:\soccer.jpg" Stretch="UniformToFill"/>
-    </Window.Background>
+    <!--<Window.Background>
+        --><!--<ImageBrush x:Name="img" ImageSource="D:\soccer.jpg" Stretch="UniformToFill"/>--><!-- 
+    </Window.Background>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -17,7 +17,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.RowSpan="2" Margin="1">
             <TextBox x:Name="Number" Width="50" Margin="10,0,20,287" Background="White"/>
-            <Button x:Name="ShowInNumber" Content="Show In Number" Width="105" Margin="19,0,20,287"/>
+            <Button x:Name="ShowInNumber" Content="Show In Number" Width="105" Margin="19,0,20,287" Click="ShowInNumber_Click"/>
             <Button x:Name="UpdateDescription" Content="Update Description" Width="125" Margin="0,0,20,287"/>
             <Button x:Name="ShowTeam" Content="ShowTeam" Width="75" Margin="0,0,20,287"/>
             <Button x:Name="Autor" Content="Autor" Width="36" Margin="0,0,5,287" Click="Autor_Click"/>

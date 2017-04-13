@@ -16,13 +16,13 @@ namespace BindingWPFtoDataBase
     public partial class modelPlayer : DbContext
     {
         public modelPlayer()
-            : base("name=modelPlayer")
+            : base("defaultconnection")
         {
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new UnintentionalCodeFirstException();
+            
         }
     
         public virtual DbSet<DataPlayer> DataPlayers { get; set; }

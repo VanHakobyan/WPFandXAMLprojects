@@ -20,14 +20,21 @@ namespace BindingWPFtoDataBase
     /// </summary>
     public partial class MainWindow : Window
     {
+        modelPlayer db = new modelPlayer();
         public MainWindow()
         {
             InitializeComponent();
+          
         }
 
         private void Autor_Click(object sender, RoutedEventArgs e)
         {
            
+        }
+
+        private void ShowInNumber_Click(object sender, RoutedEventArgs e)
+        {
+            textBlock.Text = db.DataPlayers.FirstOrDefault().Name;
         }
     }
 }
