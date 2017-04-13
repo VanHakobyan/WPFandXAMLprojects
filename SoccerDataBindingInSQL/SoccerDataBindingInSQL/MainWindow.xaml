@@ -16,7 +16,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="199"/>
         </Grid.RowDefinitions>
         <ListBox  Grid.Row="0" Height="Auto" Visibility="Collapsed">Simple TEXT</ListBox>
        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5" >
