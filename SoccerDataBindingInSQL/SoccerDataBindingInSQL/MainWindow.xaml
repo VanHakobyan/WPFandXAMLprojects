@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoccerDataBindingInSQL"
         mc:Ignorable="d"
+        MinHeight="350"
+        MaxHeight="600"
+        MinWidth="525"
+        MaxWidth="525"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid Margin="5">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox  Grid.Row="0" Height="Auto" Visibility="Collapsed">Simple TEXT</ListBox>
+       <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5" >
+        <TextBox Margin="10,10,30,10" Width="49"></TextBox>
+        <Button x:Name="ShowInNumber" Content="Show In Number" Margin="10"/>
+        <Button x:Name="UpdateDescription" Content="Update Description" Margin="10"  />
+        <Button x:Name="ShowTeam" Content="Show Team" Margin="10" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="5">
+            <Label x:Name="Name" Height="30" Width="80" Margin="10" >Name</Label>
+            <TextBox Name="FirstLastNAme" Width="380" ></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5">
+            <Label x:Name="About" Height="30" Width="80" Margin="10" >About</Label>
+            <TextBox Name="AboutIn" Width="380" Height="150" ></TextBox>
+        </StackPanel>
     </Grid>
 </Window>
