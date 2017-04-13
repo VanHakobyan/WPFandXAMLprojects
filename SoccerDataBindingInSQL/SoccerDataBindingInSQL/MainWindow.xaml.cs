@@ -40,7 +40,7 @@ namespace SoccerDataBindingInSQL
 
                 try
                 {
-                    int PlayerID = int.Parse(Namber.Text);
+                    int PlayerID = int.Parse(Number.Text);
                     SqlCommand command = new SqlCommand("SELECT * FROM [dbo].[Table] WHERE ID=@id", connection);
                     command.Parameters.AddWithValue("id", PlayerID);
                     connection.Open();
@@ -86,6 +86,47 @@ namespace SoccerDataBindingInSQL
                         Team.Items.Add(reader[1]);
                     }
                     reader.Close();
+                }
+            }
+        }
+
+        private void UpdateDescription_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(Number.Text)) MessageBox.Show("Enter an ID");
+            else
+            {
+                var connection = new SqlConnection(@"data source = (LocalDB)\MSSQLLocalDB; Integrated Security = True; initial catalog = SoccerPalyers");
+                var command = new SqlCommand();
+                if (FirstLastNAme.Text.Count(c => c == ' ') > 1)
+                {
+                    MessageBox.Show("Not a valid format");
+                    return;
+                }
+                else if (!FirstLastNAme.Text.Contains(' '))
+                {
+                    command = new SqlCommand($"update customers set fname = '{FirstLastNAme.Text}' where customerno = {Number.Text}", connection);
+                }
+                else if (FirstLastNAme.Text.Count(c => c == ' ') == 1)
+                {
+                    var split = FirstLastNAme.Text.Split(' ');
+                    command = new SqlCommand($"update customers set fname = '{split[0]}', lname = '{split[1]}' where customerno = {Number.Text}", connection);
+                }
+
+                try
+                {
+                    connection.Open();
+
+                    command.Transaction = connection.BeginTransaction();
+
+                    command.ExecuteNonQuery();
+
+                    command.Transaction.Commit();
+                    MessageBox.Show("Transaction commited");
+                }
+                catch (Exception)
+                {
+                    command.Transaction.Rollback();
+                    MessageBox.Show("transaction rolled back");
                 }
             }
         }

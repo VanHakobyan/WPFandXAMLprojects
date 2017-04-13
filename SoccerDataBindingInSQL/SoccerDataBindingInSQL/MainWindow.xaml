@@ -18,11 +18,11 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="199"/>
         </Grid.RowDefinitions>
-        <ListBox  Name="Team" Grid.Row="0" Height="Auto" Visibility="Collapsed">Simple TEXT</ListBox>
+        <ListBox  Name="Team" Grid.Row="0" Height="Auto" Visibility="Visible"></ListBox>
        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="5" >
-        <TextBox x:Name="Namber" Margin="10,10,30,10" Width="49"></TextBox>
+        <TextBox x:Name="Number" Margin="10,10,30,10" Width="49"></TextBox>
         <Button x:Name="ShowInNumber" Content="Show In Number" Margin="10" Click="ShowInNumber_Click"/>
-        <Button x:Name="UpdateDescription" Content="Update Description" Margin="10"  />
+        <Button x:Name="UpdateDescription" Content="Update Description" Margin="10" Click="UpdateDescription_Click"  />
         <Button x:Name="ShowTeam" Content="Show Team" Margin="10" Click="ShowTeam_Click" />
             <Button x:Name="Author" Content="Author" Margin="10" Width="56" Click="Author_Click"></Button>
         </StackPanel>
