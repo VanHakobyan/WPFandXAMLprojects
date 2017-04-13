@@ -96,22 +96,8 @@ namespace SoccerDataBindingInSQL
             else
             {
                 var connection = new SqlConnection(@"data source = (LocalDB)\MSSQLLocalDB; Integrated Security = True; initial catalog = SoccerPalyers");
-                var command = new SqlCommand();
-                if (FirstLastNAme.Text.Count(c => c == ' ') > 1)
-                {
-                    MessageBox.Show("Not a valid format");
-                    return;
-                }
-                else if (!FirstLastNAme.Text.Contains(' '))
-                {
-                    command = new SqlCommand($"update customers set fname = '{FirstLastNAme.Text}' where customerno = {Number.Text}", connection);
-                }
-                else if (FirstLastNAme.Text.Count(c => c == ' ') == 1)
-                {
-                    var split = FirstLastNAme.Text.Split(' ');
-                    command = new SqlCommand($"update customers set fname = '{split[0]}', lname = '{split[1]}' where customerno = {Number.Text}", connection);
-                }
-
+               
+                var command = new SqlCommand($"update [dbo].[Table] set name = '{FirstLastNAme.Text}' where id = {Number.Text}", connection);
                 try
                 {
                     connection.Open();
