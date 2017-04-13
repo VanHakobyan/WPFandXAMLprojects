@@ -57,8 +57,6 @@ namespace SoccerDataBindingInSQL
                 {
                     MessageBox.Show("Imput Corcect number !!!");
                 }
-
-
             }
         }
     }
