@@ -9,6 +9,7 @@
         MaxHeight="600"
         MinWidth="525"
         MaxWidth="525"
+       
         Title="MainWindow" Height="350" Width="525">
     <Grid Margin="5">
         <Grid.RowDefinitions >
@@ -30,7 +31,7 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal" Grid.Row="3" Margin="5">
             <Label x:Name="About" Height="30" Width="80" Margin="10" >About</Label>
-            <TextBox Name="AboutIn" Width="380" Height="150" ></TextBox>
+            <TextBox Name="AboutIn" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="380" Height="150" ></TextBox>
         </StackPanel>
     </Grid>
 </Window>
