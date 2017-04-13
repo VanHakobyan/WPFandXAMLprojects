@@ -24,4 +24,5 @@ All classes in WPF have parameterless constructors and make excessive usage of p
 <ul>
 <li> <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/LoginPassword">:key:Registration Forms:key:</a>
 <li> <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/FirstStep/EightBall">:raising_hand:Գուշակ Մանուշակ:raising_hand:</a>
+<li> <a href="https://github.com/VanHakobyan/WPFandXAMLprojects/tree/master/LoginPassword">:soccer:About Soccer Player (Binding SQL):soccer:</a>
 </ul>
