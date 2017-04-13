@@ -95,9 +95,10 @@ namespace SoccerDataBindingInSQL
             if (string.IsNullOrEmpty(Number.Text)) MessageBox.Show("Enter an ID");
             else
             {
-                var connection = new SqlConnection(@"data source = (LocalDB)\MSSQLLocalDB; Integrated Security = True; initial catalog = SoccerPalyers");
-               
-                var command = new SqlCommand($"update [dbo].[Table] set name = '{FirstLastNAme.Text}' where id = {Number.Text}", connection);
+                var connection = new SqlConnection(Properties.Settings.Default.ConnectionString);
+
+                var command = new SqlCommand($"update [dbo].[Table] set name = '{FirstLastNAme.Text}', about='{AboutIn.Text}' where id = {Number.Text}", connection);
+
                 try
                 {
                     connection.Open();
@@ -112,7 +113,7 @@ namespace SoccerDataBindingInSQL
                 catch (Exception)
                 {
                     command.Transaction.Rollback();
-                    MessageBox.Show("transaction rolled back");
+                    MessageBox.Show("Transaction rolled back");
                 }
             }
         }
