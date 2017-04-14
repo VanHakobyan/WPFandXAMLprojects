@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleWPFconnectionDB"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="textBox" Height="23" Margin="83,10,83,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Button" Margin="208,125,205,0" VerticalAlignment="Top" Click="button_Click"/>
+        <ListBox Name="ListBox" Visibility="Visible"  ></ListBox>
+        <Button x:Name="button" Content="Get Members" Margin="205,183,208,0" VerticalAlignment="Top" Click="button_Click"/>
 
     </Grid>
 </Window>

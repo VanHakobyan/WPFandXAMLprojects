@@ -29,28 +29,47 @@ namespace SimpleWPFconnectionDB
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection connection=new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Anhaves.mdf;Integrated Security=True");
-            using (connection)
+            if (ListBox.Items.Count != 0 && ListBox.Visibility != Visibility.Collapsed)
             {
-                SqlCommand command = new SqlCommand(
-                  "SELECT Id,FirstName,LastName,Age FROM CustomerSet;",
-                  connection);
-                connection.Open();
+                ListBox.Visibility = Visibility.Collapsed;
+                ListBox.Items.Clear();
+            }
+            else
+            {
 
-                SqlDataReader reader = command.ExecuteReader();
+                ListBox.Visibility = Visibility.Visible;
+                SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Anhaves.mdf;Integrated Security=True");
+                using (connection)
+                {
+                    SqlCommand command = new SqlCommand(
+                      "SELECT Id,FirstName,LastName,Age FROM CustomerSet;",
+                      connection);
+                    connection.Open();
 
-                if (reader.HasRows)
-                {
-                    
-                        textBox.Text =reader.GetName(3);
-                   
+                    SqlDataReader reader = command.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+
+
+                        while (reader.Read())
+                        {
+
+                            ListBox.Items.Add(reader[1].ToString() + " " + reader[2] + " " + reader[3].ToString());
+
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No rows found.");
+                    }
+                    reader.Close();
                 }
-                else
-                {
-                    Console.WriteLine("No rows found.");
-                }
-                reader.Close();
+
             }
         }
+
+       
     }
 }
